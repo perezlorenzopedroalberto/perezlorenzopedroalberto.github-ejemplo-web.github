@@ -1,0 +1,296 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing:  
+}
+
+body {font-family: Arial, Verdana, sans-serif;}
+
+#menu {
+	display: flex;
+	justify-content: flex-start;
+	padding: 0, auto;
+	margin: 0, auto;
+	background-color: white ; 
+	color: black; 
+}
+
+#menu img {
+	margin: 10px 20px 0 40px;
+	align-content: flex-start;
+	width: 70px;
+}
+
+.menu ul {
+	list-style-type: none;
+}
+
+#menu ul li {
+	display: inline-block;
+	align-content: flex-start;
+	padding: 10px;
+	margin: 0 auto;
+}
+
+#menu ul li a {
+	color: black;
+	text-decoration: none;
+}
+
+#menu ul li a:hover {color: #B2B2B2;}
+
+a{
+	color:red;
+}
+.slider {
+	width: 100%;
+	background-color: lightblue;
+    background-image: url(../img/hotel.jpg);
+	background-size: cover;
+    padding: 275px 10px;
+	text-align: center;
+}
+
+.texto-cabecera {
+	margin: 0 auto;
+	width: 40%;
+	padding: 20px;
+	text-align: center;
+	background-color: rgba(255, 255, 255, 0.7);
+	box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+}
+
+#cabecera a {color:white; text-decoration: none}
+#cabecera a:hover {color:lightgray;}
+
+.grid {
+	display: grid;
+	grid-template-areas: "habitacion-simple habitacion-doble habitacion-deluxe";
+	grid-gap: 10px;
+	margin-bottom: 20px;
+}
+
+.habitacion-simple {
+	grid-area: habitacion-simple;
+	background-attachment: contain;
+	background-repeat: no-repeat;
+	width: 400px;
+	height: 456px;
+	margin-left: 10px;
+}
+.habitacion-doble {
+	grid-area: habitacion-doble;
+	background-attachment: contain;
+	width: 400px;
+	height: 456px;
+}
+.habitacion-deluxe {
+	grid-area: habitacion-deluxe;
+	background-attachment: contain;
+	width: 400px;
+	height: 456px;
+}
+.imagen-footer{
+	background-color: black;
+	color:white;	
+}
+.footer ul li a:hover {color: #B2B2B2;}
+.footer ul li a:visited {color: #B2B2B2;}
+
+
+}
+#formulario{
+	margin-left: 200px;
+}
+#datos-personales img {
+	width: 70%;
+	position: absolute;
+	margin-left: 600px;
+	top: 340px; 
+	border-radius: 1px;
+}
+
+legend {
+	width: 340px;
+	font-family: 'DM Serif Display', serif;
+	text-align: center;
+	border: 1px solid none;
+	font-size: 1.1rem;background-color: #E8E4DA;
+}
+
+input[type=text], input[type=tel], input[type=date], input[type=password],  select {
+	width: 50%;
+	padding: 12px 20px;
+	margin: 8px 0 0 100px;
+	display: inline-block;
+	border: 1px solid black;
+	border-radius: 1px;
+	background-color: white;
+	background-position: 10px 10px;
+	background-repeat: no-repeat;
+	-webkit-transition: width 0.4s ease-in-out;
+}
+
+#nombre {margin-left: 190px;}
+#apellidos {margin-left: 180px;}
+#email {margin-left: 206px;}
+#movil {margin-left: 207px;}
+#entrada{margin-left: 185px;
+width: 20%;}
+#adulto{margin-left: 188px;
+width: 5%;}
+#niño{margin-left: 200px;
+width: 5%}
+#bebe{margin-left: 195px;
+width: 5%;}
+#salida{margin-left:190px;
+width: 5%;}
+#habitacion{margin-left:190px;
+width:5%;}
+
+#datos-usuario img {
+	width: 18%;
+	float: right;
+	position: absolute;
+	margin-left: 740px;
+	top: 680px; 
+}
+input[type=submit] {
+	margin-left: 200px;
+	width: 10%;
+	background-color: white;
+	color: black;
+	padding: 10px;
+	border: 1px solid black;
+	border-radius: 1px;
+	cursor: pointer;
+	top:10px;
+}
+input[type=submit]:hover {
+	background-color: grey;
+	color:black;
+}
+input[type=checkbox]{
+	margin-left: 200px;
+}
+#footer {
+	color: white;
+	text-align: center;
+	width: 100%;
+	height: auto;
+	min-height: 30px;
+	padding:15px 10px 15px 0px;
+	margin: 0 auto;
+	background-color: black;
+}
+.content-flex {
+  display:flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-content: flex-start;
+
+}
+
+
+/* Style the footer */
+
+.footer {
+  grid-area: footer;
+  background-color: black;
+  padding: 10px;
+  text-align: center;
+  color:white;
+}
+
+.gridsecundario{
+    display: grid;
+    grid-template-areas:"a b";
+    grid-template-columns: 45% 45%;
+    grid-gap: 20px;
+    justify-content: center;
+    background-color: grey;
+    padding-bottom: 20px;
+}
+.cinque-terre{
+    flex: 45%;
+    background-image: url(../img/cinqueterre.jpg);
+    height:400px;
+    grid-area: a;
+    background-repeat: no-repeat;
+    padding:20px 20px 0px 0px;
+    background-origin:content-box;
+    background-color: grey;
+    display: flex;
+    color:white;
+    align-items: flex-end;
+}
+.cinque-terre p{
+    margin:0 0 10px 10px ;
+}
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+    grid-area: b;
+    padding-top:20px;
+    background-color: grey;
+ }
+.new-york{
+    background-image: url(../img/newyork2.jpg);
+    width:45%;
+    height: 200px;
+    background-size: cover;
+    margin-right:10px;
+    margin-bottom:10px;
+    background-origin:content-box;
+    align-items: flex-end;
+    display:flex;
+    color:white;
+}
+.new-york p{
+    margin:0 0 10px 10px ;
+}
+.san-francisco{
+    background-image: url(../img/sanfran.jpg);
+    width:45%;
+    height: 200px;
+    background-size: cover;
+    background-origin:content-box;
+    margin-left:10px;
+    margin-bottom:10px;
+    align-items: flex-end;
+    display:flex;
+    color:white;
+}
+.san-francisco p{
+    margin:0 0 10px 10px ;
+}
+.pisa{
+    background-image: url(../img/pisa.jpg);
+    width:45%;
+    height: 200px;
+    background-size: cover;
+    background-origin:content-box;
+    margin-right:10px;
+    margin-top:10px;
+    align-items: flex-end;
+    display:flex;
+    color:white;
+}
+.pisa p{
+    margin:0 0 10px 10px ;
+}
+.paris{
+    background-image: url(../img/paris.jpg);
+    width:45%;
+    height: 200px;
+    background-size: cover;
+    background-origin:content-box;
+    margin-left:10px;
+    margin-top:10px;
+    align-items: flex-end;
+    display:flex;
+    color:white;
+}
+.paris p{
+    margin:0 0 10px 10px ;
+}
